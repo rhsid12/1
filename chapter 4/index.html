@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>오늘일기</title>
+    <!-- Bootstrap CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="diary-bg">
+    <div class="container py-4 diary-card">
+        <h1 class="mb-3">오늘일기</h1>
+        <hr>
+
+        <div class="alert alert-info" role="alert">
+            이것은 Bootstrap 디자인 예시입니다.
+        </div>
+
+        <p>
+            나는 학교에 갑니다.나는 학교에 갑니다.<br>
+            나는 학교에 갑니다.나는 학교에 갑니다.<br>
+            나는 학교에 갑니다.나는 학교에 갑니다.
+        </p>
+
+        <div class="mb-3">
+            <input id="todo_input" type="text" class="form-control" placeholder="할 일을 입력하세요.">
+        </div>
+
+        <img
+            src="https://cdn.dailyvet.co.kr/wp-content/uploads/2024/05/15231647/20240515ceva_experts4.jpg"
+            alt="고양이 그림"
+            class="img-fluid rounded mb-3"
+            style="max-width: 50%; height: auto;"
+        >
+
+        <div class="mb-3">
+            <a href="https://www.google.com" class="link-primary me-2">구글</a>
+            <button id="add_btn" class="btn btn-success">클릭</button>
+        </div>
+
+        <h2 class="h4">오늘의 할 일</h2>
+        <ol id="todo_list" class="list-group list-group-numbered">
+            <li class="list-group-item">학교에 갑니다.</li>
+            <li class="list-group-item">숙제를 합니다.</li>
+            <li class="list-group-item">저녁을 먹습니다.</li>
+        </ol>
+    </div>
+
+    <script src="script.js"></script>
+    <!-- Bootstrap JS Bundle CDN (includes Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
