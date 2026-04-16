@@ -1,0 +1,71 @@
+.diary-bg {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #f8fbff 0%, #fff7fb 55%, #fffdf5 100%);
+    font-family: "Pretendard", "Noto Sans KR", "Malgun Gothic", sans-serif;
+    color: #2d3748;
+}
+
+.diary-card {
+    background-color: rgba(255, 255, 255, 0.92);
+    border: 1px solid #e9eef8;
+    border-radius: 18px;
+    box-shadow: 0 10px 30px rgba(55, 84, 170, 0.08);
+    padding: 2rem 1.75rem;
+}
+
+h1, h2 {
+    font-weight: 700;
+    letter-spacing: -0.01em;
+    color: #3a3f58;
+}
+
+p {
+    color: #4a5568;
+    font-size: 1rem;
+    line-height: 1.8;
+    text-align: center;
+}
+
+#add_btn {
+    min-width: 110px;
+    border-radius: 999px;
+    font-weight: 600;
+    padding: 0.55rem 1.2rem;
+}
+
+.form-control {
+    border-radius: 12px;
+    border-color: #d7deef;
+}
+
+.list-group-item {
+    border-color: #e6ebf7;
+    font-weight: 500;
+}
+
+.todo-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.75rem;
+}
+
+.todo-text {
+    transition: color 0.2s ease, text-decoration-color 0.2s ease;
+}
+
+.todo-hovered .todo-text {
+    text-decoration: line-through;
+    color: #7d879c;
+}
+
+.todo-delete-btn {
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.2s ease;
+}
+
+.todo-item:hover .todo-delete-btn {
+    opacity: 1;
+    pointer-events: auto;
+}
